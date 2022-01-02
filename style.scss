@@ -1,0 +1,45 @@
+@import './layout/btn';
+@import './layout/header';
+@import './layout/banner';
+@import './layout/category';
+@import './layout/feature';
+@import './layout/partners';
+@import './layout/connect';
+@import './layout/subscribe';
+@import './layout/footer';
+
+$primary-color: #ffc87a;
+$text-color: #182c5f;
+$btn-shadow:#f5f0d2;
+
+html {
+    font-size: 62.5%;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+body {
+    font-family:'Poppins', sans-serif;
+    color: $text-color;
+    line-height: 1.4;
+    font-weight: 400;
+    height: 5500px;
+    background-color: #ffffff;
+}
+
+//1440px  c_ 1170px
+.wapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+

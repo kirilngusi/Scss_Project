@@ -1,0 +1,32 @@
+$primary-color: #ffc87a;
+@use '../utilities/mixins' as mixin;
+
+.connect {
+    text-align: center;
+    margin-bottom: 17rem;
+    &__title {
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 3.5rem;
+    }
+    &__us {
+        font-size: 2rem;
+        font-size: bold;
+        margin-bottom: 6rem;
+
+        span {
+            color: $primary-color;
+        }
+    }
+    &__list {
+        @include mixin.flex(stretch,space-between);
+        
+        img {
+            border-radius: 3rem;
+        }
+    }
+
+    &__item {
+        // width: calc( 25% - 22.5px);
+    }
+}

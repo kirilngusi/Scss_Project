@@ -1,0 +1,21 @@
+@use '../utilities/mixins' as mixin;
+
+$text-color: hsl(223, 60%, 23%);
+
+.footer {
+    margin-top:5rem;
+    &__c {
+        @include mixin.flex(flex-start,space-between);
+    }
+
+    &__item {
+        width: 25%;
+    }
+    &__link {
+        font-size: 1.4rem;
+        color: $text-color;
+        display: block;
+        margin-bottom:3rem;
+        width:fit-content;
+    }
+}

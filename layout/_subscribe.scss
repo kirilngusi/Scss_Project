@@ -1,0 +1,51 @@
+@use '../utilities/mixins' as mixin;
+$text-color: #182c5f;
+
+.subscribe {
+    &__c {
+        @include mixin.flex(flex-start,space-between);
+        padding-bottom: 8rem;
+        border-bottom: 4px solid $text-color;
+
+    }
+    &__title , &__info {
+        width: 50%;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: bold;
+        max-width: 43rem;
+    }
+
+    &__form {
+        background-color: #f2f1f6;
+        @include mixin.flex(center,space-between);
+        padding:2rem;
+    }
+    &__input , &__button {
+        padding: 0;
+        border: 0;
+        outline: none;
+        background: none;
+        font-family: 'Poppins';
+        font-size: 1.4rem;
+    }
+    &__input {
+        flex-grow: 1;
+    }
+    &__button {
+        cursor: pointer;
+        padding-right: 1.5rem;
+    }
+
+    &__icon {
+        margin-top:5rem;
+        i {
+            margin-left:4rem;
+            font-size: 2.8rem;
+        }
+  
+
+    }
+}

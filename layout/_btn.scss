@@ -1,0 +1,31 @@
+$primary-color: #ffc87a;
+$text-color: #182c5f;
+$btn-shadow:#f5f0d2;
+
+.btn {
+    cursor: pointer;
+    outline: none;
+    font-size: 1.6rem;
+    text-align: center;
+    color:$text-color;
+    // padding: 2rem 3rem;
+    padding: 1.35rem 3.5rem;
+    display: inline-block;
+    border: 0;
+    background-color: transparent;
+    &--border {
+        border: 1px solid currentColor;
+    }
+    &--rounded {
+        border-radius: 2.5rem;
+    }
+    &--primary {
+        background-color: $primary-color;
+        box-shadow: 0 10px 35px -5px $btn-shadow ;
+    }
+  
+}
+
+.btn-weight {
+    font-weight: 550;
+}

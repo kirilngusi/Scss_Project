@@ -1,0 +1,62 @@
+@use '../utilities/mixins' as mixin;
+
+$primary-color: #ffc87a;
+$text-color: #182c5f;
+
+.container {
+    max-width: 1170px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top:4.2rem;
+    
+    &__inner {
+        @include mixin.flex(center,space-between);
+
+    }
+    &__menu {
+        &--list {
+            @include mixin.flex(center);
+        }
+
+        &--item {
+            margin-left:5rem;
+            &:last-child {
+                margin-left: 7rem;
+            }
+        }
+        &--link {
+            font-size: 1.6rem;
+            color: $text-color;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        
+    }
+    
+    &__login {
+        padding: .75rem 2.5rem;
+        display: inline-block;
+        border: 1px solid currentColor;
+        border-radius:2.5rem;
+    }
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $text-color;
+    &__text {
+        color:$primary-color
+    }
+}
+
+.header__menu {
+    list-style: none
+}
+
+
